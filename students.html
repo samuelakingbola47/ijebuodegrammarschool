@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Resources &mdash; Ijebu-Ode Grammar School</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="demo-ribbon">PROTOTYPE DEMO &mdash; built for review by school &amp; JOGSOBA leadership. <strong>Not yet live, no real student or alumni data.</strong></div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="23" r="8.5" stroke="#D7A23A" stroke-width="2"/>
+        <path d="M4 25H36" stroke="#D7A23A" stroke-width="2" stroke-linecap="round"/>
+        <path d="M11 9L13.5 12.5M29 9L26.5 12.5M20 5.5V10" stroke="#D7A23A" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="name">Ijebu-Ode Grammar School</span>
+        <span class="sub">Est. 1913 &middot; Ijebu Ode, Ogun State</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="alumni.html">Old Boys &middot; JOGSOBA</a>
+      <a href="students.html" class="active">Students</a>
+      <a href="admin.html">Admin console</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="admin.html" class="btn btn-outline-light btn-sm">Staff login</a>
+      <a href="alumni.html" class="btn btn-gold btn-sm">Join JOGSOBA</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="container">
+    <p class="eyebrow">FOR CURRENT STUDENTS</p>
+    <h1>Everything you need for class, in one place</h1>
+    <p>Subject notes, past questions, school announcements, and a direct way to ask an old boy for guidance &mdash; without waiting for a reunion to happen.</p>
+  </div>
+</section>
+<svg class="horizon-divider flip" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0,64 C420,4 1020,4 1440,64 L1440,64 L0,64 Z"/>
+</svg>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head" style="display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:12px; margin-bottom:24px;">
+      <div>
+        <p class="eyebrow on-light">RESOURCE LIBRARY</p>
+        <h2 style="font-size:24px;">Notes and past questions, by subject</h2>
+      </div>
+      <span class="demo-badge">Sample subjects &amp; counts for this prototype</span>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-chip active" data-filter="all">All subjects</button>
+      <button class="filter-chip" data-filter="maths">Mathematics</button>
+      <button class="filter-chip" data-filter="english">English</button>
+      <button class="filter-chip" data-filter="science">Sciences</button>
+      <button class="filter-chip" data-filter="arts">Arts &amp; humanities</button>
+    </div>
+
+    <div class="resource-grid">
+      <div class="resource-card card" data-tags="maths">
+        <div class="subject-icon" style="background:rgba(215,162,58,0.15);"><svg class="icon" viewBox="0 0 24 24" style="stroke:#8a6213; width:18px; height:18px;"><path d="M4 4h16v16H4z"/><path d="M9 9h6M9 14h6M9 4v16"/></svg></div>
+        <h4>SS3 Mathematics</h4>
+        <p class="meta">Past questions &middot; 24 files</p>
+      </div>
+      <div class="resource-card card" data-tags="english">
+        <div class="subject-icon" style="background:rgba(47,82,51,0.1);"><svg class="icon" viewBox="0 0 24 24" style="stroke:#2F5233; width:18px; height:18px;"><path d="M4 19.5V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v13.5"/><path d="M4 19.5h16M8 8h8M8 12h8"/></svg></div>
+        <h4>English Language</h4>
+        <p class="meta">Notes &amp; comprehension &middot; 18 files</p>
+      </div>
+      <div class="resource-card card" data-tags="science">
+        <div class="subject-icon" style="background:rgba(21,33,59,0.08);"><svg class="icon" viewBox="0 0 24 24" style="stroke:#15213B; width:18px; height:18px;"><path d="M9 3h6M10 3v6.2L5 19a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3L14 9.2V3"/></svg></div>
+        <h4>Chemistry</h4>
+        <p class="meta">Practical guides &middot; 12 files</p>
+      </div>
+      <div class="resource-card card" data-tags="science">
+        <div class="subject-icon" style="background:rgba(21,33,59,0.08);"><svg class="icon" viewBox="0 0 24 24" style="stroke:#15213B; width:18px; height:18px;"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h4>Physics</h4>
+        <p class="meta">Notes &amp; past questions &middot; 16 files</p>
+      </div>
+      <div class="resource-card card" data-tags="science">
+        <div class="subject-icon" style="background:rgba(21,33,59,0.08);"><svg class="icon" viewBox="0 0 24 24" style="stroke:#15213B; width:18px; height:18px;"><path d="M6 3h12M9 3v6l-5 9a2 2 0 0 0 1.7 3h12.6a2 2 0 0 0 1.7-3l-5-9V3"/></svg></div>
+        <h4>Biology</h4>
+        <p class="meta">Notes &amp; diagrams &middot; 20 files</p>
+      </div>
+      <div class="resource-card card" data-tags="maths">
+        <div class="subject-icon" style="background:rgba(215,162,58,0.15);"><svg class="icon" viewBox="0 0 24 24" style="stroke:#8a6213; width:18px; height:18px;"><path d="M3 17l6-6 4 4 8-8"/></svg></div>
+        <h4>Further Mathematics</h4>
+        <p class="meta">Worked examples &middot; 10 files</p>
+      </div>
+      <div class="resource-card card" data-tags="arts">
+        <div class="subject-icon" style="background:rgba(47,82,51,0.1);"><svg class="icon" viewBox="0 0 24 24" style="stroke:#2F5233; width:18px; height:18px;"><path d="M3 10l9-6 9 6-9 6-9-6Z"/><path d="M7 12.5V18l5 3 5-3v-5.5"/></svg></div>
+        <h4>Government &amp; History</h4>
+        <p class="meta">Notes &amp; essays &middot; 14 files</p>
+      </div>
+      <div class="resource-card card" data-tags="arts">
+        <div class="subject-icon" style="background:rgba(47,82,51,0.1);"><svg class="icon" viewBox="0 0 24 24" style="stroke:#2F5233; width:18px; height:18px;"><path d="M12 3c4 0 7 2.5 7 6s-3 6-7 6-7-2.5-7-6 3-6 7-6Z"/><path d="M12 15v6M9 21h6"/></svg></div>
+        <h4>Literature in English</h4>
+        <p class="meta">Set texts &amp; guides &middot; 9 files</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section on-parchment-2">
+  <div class="container">
+    <div class="two-col">
+      <div class="card">
+        <p class="eyebrow on-light">ASK AN OLD BOY</p>
+        <h3 style="font-size:20px; color:var(--ink); margin:12px 0 10px;">Mentorship from people who sat exactly where you're sitting</h3>
+        <p style="font-size:14.5px; color:var(--text-on-light-muted); margin-bottom:20px;">Browse open mentorship offers from JOGSOBA members &mdash; career chats, tutoring, and university guidance &mdash; the same board old boys post to from the alumni side.</p>
+        <a href="alumni.html#join" class="btn btn-outline-dark btn-sm">See open mentorship offers</a>
+      </div>
+      <div class="card">
+        <p class="eyebrow on-light">SCHOLARSHIP &amp; CAREER CORNER</p>
+        <h3 style="font-size:20px; color:var(--ink); margin:12px 0 14px;">Curated by old boys, for students</h3>
+        <div class="list-row"><div class="meta-text"><h4>Applying to study engineering abroad</h4><p>Guide by Adewale Bankole &middot; Set of 1996</p></div></div>
+        <div class="list-row"><div class="meta-text"><h4>WAEC scholarship checklist</h4><p>Guide by Funke Ogunleye &middot; Set of 1994</p></div></div>
+        <div class="list-row"><div class="meta-text"><h4>A day in the life of a physician</h4><p>Guide by Tunde Adeyemi &middot; Set of 2003</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section on-ink">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">SCHOOL ANNOUNCEMENTS</p>
+      <h2>Straight from the administration</h2>
+    </div>
+    <div class="card" style="background:var(--ink-2); border-color:rgba(255,255,255,0.08);">
+      <div class="list-row" style="border-color:rgba(255,255,255,0.08);">
+        <div class="meta-text"><h4 style="color:var(--text-on-ink);">Second term resumption date confirmed</h4><p style="color:var(--text-on-ink-muted);">Posted by the Vice Principal &middot; demo</p></div>
+        <span class="pill pill-gold">New</span>
+      </div>
+      <div class="list-row" style="border-color:rgba(255,255,255,0.08);">
+        <div class="meta-text"><h4 style="color:var(--text-on-ink);">Inter-house sports competition date set</h4><p style="color:var(--text-on-ink-muted);">Posted by the Sports Master &middot; demo</p></div>
+      </div>
+      <div class="list-row" style="border-color:rgba(255,255,255,0.08);">
+        <div class="meta-text"><h4 style="color:var(--text-on-ink);">WAEC registration window opens</h4><p style="color:var(--text-on-ink-muted);">Posted by the Examinations Officer &middot; demo</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" style="width:32px;height:32px;">
+            <circle cx="20" cy="23" r="8.5" stroke="#D7A23A" stroke-width="2"/>
+            <path d="M4 25H36" stroke="#D7A23A" stroke-width="2" stroke-linecap="round"/>
+            <path d="M11 9L13.5 12.5M29 9L26.5 12.5M20 5.5V10" stroke="#D7A23A" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="brand-text"><span class="name" style="color:var(--text-on-ink); font-size:15px;">Ijebu-Ode Grammar School</span></span>
+        </div>
+        <p style="font-size:13.5px; max-width:280px; color:var(--text-on-ink-muted);">The dawn of life, the source of light, and a beacon of secondary education in Ijebuland since 1913.</p>
+        <p class="footer-motto">&ldquo;Non Nobis Domine&rdquo;</p>
+      </div>
+      <div>
+        <h5>Platform</h5>
+        <a href="about.html">About the school</a>
+        <a href="students.html">Student resources</a>
+        <a href="alumni.html">JOGSOBA network</a>
+        <a href="admin.html">Admin console</a>
+      </div>
+      <div>
+        <h5>Community</h5>
+        <a href="https://www.jogsobanorthamerica.com/" target="_blank" rel="noopener">JOGSOBA North America</a>
+        <a href="alumni.html">Reunions &amp; events</a>
+        <a href="alumni.html">Give back</a>
+      </div>
+      <div>
+        <h5>Status</h5>
+        <a style="cursor:default;">Prototype build</a>
+        <a style="cursor:default;">For leadership review</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Ijebu-Ode Grammar School. Demo build, not a live site.</span>
+      <span>Built by a serving corps member &middot; NYSC CDS project</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
